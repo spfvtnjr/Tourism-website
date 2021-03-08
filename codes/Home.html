@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gallery</title>
+</head>
+<style>
+    .main-slide {
+        background: url("img/kgl-city2.jpg");
+        width: 100%;
+        height: 35em;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: slide 30s infinite;
+        animation-delay: 4s;
+    }
+
+    @keyframes slide {
+        25% {
+            background: url("img/img6.jpg");
+            width: 100%;
+            height: 35em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        50% {
+            background: url("img/img7.jpg");
+            width: 100%;
+            height: 35em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        75% {
+            background: url("img/img5.jpg");
+            width: 100%;
+            height: 35em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        100% {
+            background: url("img/kgl-city2.jpg");
+            width: 100%;
+            height: 35em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    #why-visit-div-heading {
+        text-align: center;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .why-visit-div {
+        display: flex;
+        padding: 20px;
+    }
+
+    .sub-div-heading {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .main-text {
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    #main-text-2 {
+        text-align: center;
+    }
+
+    #main-text-3 {
+        text-align: end;
+    }
+
+    #top-places-heading {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .exp-text-heading {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .slide>img {
+        width: 55%;
+        float: left;
+        height: 30em;
+    }
+
+    .slide-3>img {
+        width: 100%;
+        height: 32em;
+    }
+    #museum-text {
+        text-align: center;
+        font-size: larger;
+        margin: 30px;
+    }
+
+    .slide-4>img {
+        width: 55%;
+        float: right;
+        height: 30em;
+    }
+
+    .exp-text-1,
+    .exp-text-4 {
+        width: 45%;
+        float: left;
+        height: 30em;
+        background-color: #fdfdfd;
+    }
+
+    #wordy {
+        text-align: center;
+        padding: 10px 10em;
+    }
+
+    .end-txt {
+        text-align: center;
+        font-size: 20px;
+        margin: 10px;
+        font-style: italic;
+    }
+</style>
+
+<body>
+    <div class="main-container">
+        <nav>
+            <img src="img/logo.png" class="logo" alt="logo">
+            <ul class="nav-links">
+                <li class="nav-item-1"><a href="Home.html" id="active">Home</a></li>
+                <li class="nav-item-2"><a href="Tourism.html">Tourism</a></li>
+                <li class="nav-item-3"><a href="Gallery.html">Gallery</a></li>
+                <li class="nav-item-4"><a href="contact.html">Get in touch</a></li>
+            </ul>
+        </nav>
+        <div class="main-slide">
+        </div>
+        <h1 id="why-visit-div-heading">WHY SHOULD YOU VISIT RWANDA</h1>
+        <div class="why-visit-div">
+            <div class="why-visit-subdiv">
+                <div class="sub-div-heading">RELAXATION</div>
+                <div class="main-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse est alias sint itaque, numquam
+                    possimus saepe. Et fugit incidunt molestiae voluptates iure, aspernatur obcaecati amet, nostrum modi
+                    quas unde nobis.
+                </div>
+            </div>
+            <div class="why-visit-subdiv">
+                <div class="sub-div-heading">RWANDA'S CULTURE AND HERITAGE</div>
+                <div class="main-text" id="main-text-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse est alias sint itaque, numquam
+                    possimus saepe. Et fugit incidunt molestiae voluptates iure, aspernatur obcaecati amet, nostrum modi
+                    quas unde nobis.
+                </div>
+            </div>
+            <div class="why-visit-subdiv">
+                <div class="sub-div-heading">INVESTMENT AND BUSSINESS</div>
+                <div class="main-text" id="main-text-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse est alias sint itaque, numquam
+                    possimus saepe. Et fugit incidunt molestiae voluptates iure, aspernatur obcaecati amet, nostrum modi
+                    quas unde nobis.
+                </div>
+            </div>
+        </div>
+        <h1 id="top-places-heading">TOP PLACES FOR YOU</h1>
+        <div class="top-places">
+            <div class="top-places-subdiv" id="top-places-subdiv-1">
+                <div class="slide">
+                    <img src="img/img7.jpg" alt="img">
+                </div>
+                <div class="exp-text-1">
+                    <h5 class="exp-text-heading">Rwanda National parks</h5>
+                </div>
+            </div>
+            <div class="top-places-subdiv">
+                <div class="slide">
+
+
+                </div>
+                <div class="exp-text-2">
+                    <h5 class="exp-text-heading">VISIT A RAPID DEVELOPING NATION</h5>
+                    <h5 class="exp-text-heading">Rwanda is now a great place to invest</h5>
+                    <p id="wordy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia dolor est
+                        dolore, asperiores enim obcaecati accusantium rerum nemo nulla veniam deserunt vitae modi
+                        voluptate optio impedit numquam, quo cum!
+                        Quam eius veniam nesciunt porro praesentium harum laborum quisquam alias? Nobis, veniam
+                        perferendis tempora similique, nemo qui architecto consectetur provident enim quaerat maxime in
+                        sunt fugit aliquam nam iste porro.
+                    </p>
+                </div>
+            </div>
+            <div class="top-places-subdiv">
+                <div class="slide-3">
+                    <img src="img/kgl-city2.jpg" alt="img">
+                </div>
+            </div>
+            <div class="top-places-subdiv">
+                <h4 id="museum-text">NYANZA HISTORICAL MUSEUM </h4>
+                <div class="slide-4">
+                    <img src="img/rukari.jpg" alt="img">
+                </div>
+                <div class="exp-text-4">
+                    <h5 class="exp-text-heading">Rwanda National parks</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="end-txt">
+            "visit Rwanda ,relax ,learn and invest "
+        </div>
+
+
+
+
+
+
+
+        <div class="footer">
+            <div class="footer-column-1">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="footer-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem officiis corrupti
+                        dignissimos, fugiat e</p>
+                </div>
+                <div class="f-map">
+                    <img src="img/map-of-rwanda.jpg" alt="rwanda-map">
+                </div>
+            </div>
+            <div class="footer-column-2">
+                <h6 class="footer-col-header">Main links</h6>
+                <ul class="f-main-links">
+                    <li class="nav-item-1"><a href="Home.html">Home</a></li>
+                    <li class="nav-item-2"><a href="Tourism.html" id="active">Tourism</a></li>
+                    <li class="nav-item-3"><a href="Gallery.html">Gallery</a></li>
+                    <li class="nav-item-4"><a href="contact.html">Get in touch</a></li>
+                </ul>
+            </div>
+            <div class="footer-column-3">
+                <h6 class="footer-col-header">Social medias</h6>
+                <p id="open-text">Let's connect on internet</p>
+                <div class="social-media-icons">
+                    <!-- icons here -->
+                </div>
+                <p id="close-txt">Tell us all you think about Rwanda ;it's your time</p>
+            </div>
+            <div class="footer-column-4">
+                <h6 class="footer-col-header">Leave us a message</h6>
+                <div class="form-group footer-textarea">
+                    <textarea class="form-control" name="message" id="message" rows="3"
+                        placeholder="Write your message here"></textarea>
+                    <button type="submit" id="f-send">Send</button>
+                </div>
+            </div>
+            <div class="back-top">
+                <a href="#top" id="f-back-top"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <div id="copyright-txt">
+                <p>Alrights reserved @turinumugishasouvenir</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

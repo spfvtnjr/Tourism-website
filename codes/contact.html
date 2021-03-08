@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>contact</title>
+</head>
+<style>
+.upper{
+    display: flex;
+    padding: 20px;
+}
+.we-connect{
+    width: 45%;
+    margin-left: 0.5em;
+    padding: 3em;
+}
+#we-connect-heading{
+    color: #18233A;
+    font-size: 30px;
+}
+.map-supporters{
+    background: url(img/dot-map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30em;
+    width: 55%;
+}
+#contact-header{
+    margin-top: 40px;
+    font-size: 25px;
+}
+#or{
+    font-size: 25px; 
+}
+.middle{
+    background: url("img/lap2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50em;
+    margin-top: -3em;
+}
+form{
+    position: absolute;
+    width: 40%;
+    margin: 10em auto 0  40%;
+    background-color: #18233A;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+.form-group{
+    width: 80%;
+    margin: 10px auto;
+}
+.form-control{
+    width: 100%;
+    padding:5px ;
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+  }
+  #form-msg{
+      height: 13em !important;
+  }
+
+#form-submit{
+width: 20%;
+height: 40px;
+border-radius: 5px;
+outline: none;
+margin-left: 80%;
+}
+#form-title{
+    color: #ffffff;
+    font-size: large;
+    text-align: center;
+}
+</style>
+<body>
+    <div class="main-container">
+        <nav>
+            <img src="img/logo.png" class="logo" alt="logo">
+            <ul class="nav-links">
+                <li class="nav-item-1"><a href="Home.html">Home</a></li>
+                <li class="nav-item-2"><a href="Tourism.html">Tourism</a></li>
+                <li class="nav-item-3"><a href="Gallery.html">Gallery</a></li>
+                <li class="nav-item-4"><a href="contact.html" id="active">Get in touch</a></li>
+            </ul>
+        </nav>
+<div class="upper">
+    <div class="we-connect">
+    <h3 id="we-connect-heading">
+        Let's connect
+    </h3>
+    <p id="connection-txt">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cum minima enim officia a, quae quibusdam recusandae. Aliquam, voluptatum distinctio. Ipsum exercitationem voluptatem quidem ducimus blanditiis ea explicabo suscipit dolorum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi maiores dolorum eos quam ipsum, repudiandae cumque harum! Laudantium, reprehenderit ipsum minus vero voluptatibus eveniet nam. Voluptatum vero et temporibus.
+    </p>
+     <p id="contact-header">Contact us through</p>
+    <p>Email: visitRda@gmail.com</p>
+    <p id="or">OR</p>
+    <P>Phone call: +25077777821319 </P>
+    </div>
+    <div class="map-supporters">
+    </div>
+</div>
+<div class="middle">
+    <div class="contact-form">
+        <form action="#">
+            <h6 id="form-title">Tell us what you think</h6>
+            <div class="form-group">
+              <input type="text"
+                class="form-control" name="firstname" id="firstname" placeholder="Write your first name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Write your email" required>
+            </div>
+              <div class="form-group">
+                <textarea class="form-control" name="form-msg" id="form-msg" rows="3" placeholder="Type your message here"></textarea>
+              </div>
+              <div class="form-group">
+              <button type="submit" id="form-submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer-column-1">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="footer-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem officiis corrupti
+                        dignissimos, fugiat e</p>
+                </div>
+                <div class="f-map">
+                    <img src="img/map-of-rwanda.jpg" alt="">
+                </div>
+            </div>
+            <div class="footer-column-2">
+                <h6 class="footer-col-header">Main links</h6>
+                <ul class="f-main-links">
+                <li class="nav-item-1"><a href="Home.html">Home</a></li>
+                <li class="nav-item-2"><a href="Tourism.html" id="active">Tourism</a></li>
+                <li class="nav-item-3"><a href="Gallery.html">Gallery</a></li>
+                <li class="nav-item-4"><a href="contact.html">Get in touch</a></li>
+                </ul>
+            </div>
+            <div class="footer-column-3">
+                <h6 class="footer-col-header">Social medias</h6>
+                <p id="open-text">Let's connect on internet</p>
+                <div class="social-media-icons">
+                    <!-- icons here -->
+                </div>
+                <p id="close-txt">Tell us all you think about Rwanda ;it's your time</p>
+            </div>
+            <div class="footer-column-4">
+                <h6 class="footer-col-header">Leave us a message</h6>
+                    <div class="form-group footer-textarea">
+                        <textarea  name="message" id="message" rows="3"
+                            placeholder="Write your message here"></textarea>
+                        <button type="submit" id="f-send">Send</button>
+                    </div>
+                </div>
+            <div class="back-top">
+                <a href="#top" id="f-back-top"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <div id="copyright-txt">
+                <p>Alrights reserved @turinumugishasouvenir</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
