@@ -266,6 +266,18 @@ html {
     outline: none;
     cursor: pointer;
 }
+.social-media-icons{
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+.social-media-icons>li{
+    margin: 5px ;
+    background-color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    color: aliceblue;
+}
 
 /* footer responsiveness */
 @media only screen and (max-width:600px) {
@@ -305,4 +317,11 @@ html {
         width: 100%;
         padding: 0;
     }
+    .social-media-icons{
+        margin-left: 20%;
+    } 
+    #close-txt,#open-text{
+        text-align: center;
+    }
+    
 }
