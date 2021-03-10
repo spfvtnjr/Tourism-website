@@ -4,7 +4,10 @@
     margin: 0;
     font-family: 'poppins';
 }
-
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
 body::-webkit-scrollbar {
     width: 10px;
     background-color: whitesmoke;
@@ -158,11 +161,16 @@ a {
     text-decoration: none;
 }
 
-.logo {
+nav>.logo {
     height: 40px;
     margin: 10px;
 }
-
+.footer-column-1>.logo>img {
+    display: block;
+    width: 24%;
+    height: 30px;
+    margin: 0 auto !important;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -192,9 +200,7 @@ html {
 
 .footer-column-4 {
     width: 24%;
-
 }
-
 .f-map>img {
     width: 95%;
     height: 200px;
@@ -259,4 +265,44 @@ html {
     color: #ffffff;
     outline: none;
     cursor: pointer;
+}
+
+/* footer responsiveness */
+@media only screen and (max-width:600px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .footer {
+        display: block;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .footer-column-1,
+    .footer-column-2,
+    .footer-column-3,
+    .footer-column-4 {
+        width: 100%;
+    }
+
+    .footer-column-2 {
+        padding-left: 0;
+    }
+    .footer-col-header,
+    .f-main-links {
+        text-align: center;
+    }
+
+    .f-map>img {
+        height: 150px;
+        margin: 0 auto;
+    }
+    #message{
+        width: 100%;
+        padding: 0;
+    }
 }
