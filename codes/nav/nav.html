@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>navigation bar</title>
+</head>
+<style>
+
+nav {
+    background-color: rgb(40, 126, 0);
+    height: 60px;
+    width: 100%;
+
+}
+nav ul{
+    float: right;
+    margin-right:20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+.menu-icon{
+   float: right;
+   color: white;
+   font-size: 30px;
+   line-height: 80px;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+}
+#check{
+   display: none;
+}
+@media only screen and (max-width:600px) {
+   nav ul li a{
+       font-size: 30px;
+   }
+   .menu-icon{
+       display: inline-block;
+   }
+   nav ul{
+       width: 100%;
+       height: 360px;
+       position: fixed;
+       top: 80px;
+       background-color: aqua; 
+       left: -100%;
+       transition: all .5s;
+   }
+   nav ul li{
+       display: block;
+       text-align: center;
+   }
+   #check:checked ~ ul.nav-links{
+       left: 0 !important;
+   }
+   
+}
+</style>
+<body>
+    <nav>
+        <!-- <img src="img/logo.png" class="logo" alt="logo"> -->
+        <input type="checkbox" id="check">
+        <label for="check" class="menu-icon"><i class="ri-menu-2-line"></i></label>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="Home.html" id="active">Home</a></li>
+            <li class="nav-item"><a href="Tourism.html">Tourism</a></li>
+            <li class="nav-item"><a href="Gallery.html">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html">Get in touch</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

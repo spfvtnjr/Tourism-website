@@ -4,10 +4,13 @@
     margin: 0;
     font-family: 'poppins';
 }
-html, body {
+
+html,
+body {
     max-width: 100% !important;
     overflow-x: hidden !important;
 }
+
 body::-webkit-scrollbar {
     width: 10px;
     background-color: whitesmoke;
@@ -16,45 +19,104 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
     width: 10px;
-    background-color:#0d1d40;
+    background-color: #0d1d40;
     border-radius: 4px;
 }
+
 /* navbar styling */
 nav {
-    width: 100%;
+    background-color: whitesmoke;
     height: 60px;
-    background-color: #ffffff;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    box-shadow: 0px 5px 9px 0px #4a5264;
+    width: 100%;
 }
 
-nav>ul.nav-links {
-    list-style: none;
-    display: flex;
+nav ul {
     float: right;
+    background-color: #0d1d40;
+    width: 70%;
+    border-radius: 70px 0 0 0;
+    position: relative;
+    height: 60px;
 }
 
-nav>ul>li {
-    padding-right: 50px;
-    float: right;
+nav ul li {
+    display: inline-block;
+    position: relative;
     line-height: 60px;
+    margin: 0 20px;
+    left: 30em;
 }
 
-nav>ul>li>a {
-    float: right;
-    color: #18233A;
-    font-weight: 600;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
 }
-nav>ul>li>a#active{
-font-size: 1.3em;
-font-weight: 600;
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    float: right;
+    color: #0d1d40;
+    font-size: 30px;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media only screen and (max-width:740px) {
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .menu-icon {
+        display: inline-block;
+    }
+
+    nav ul.nav-links {
+        width: 100%;
+        height: 270px;
+        position: absolute;
+        top: 60px;
+        background-color: #0d1d40;
+        left: -100%;
+        border-radius: 0;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        position: inherit;
+    }
+
+    #check:checked~ul.nav-links {
+        left: 0 !important;
+    }
+}
+@media only screen and (min-width:740px) and (max-width:825px) {
+    nav ul li {
+       left: 6em;
+    }
+}
+@media only screen and (min-width:825px) and (max-width:1300px) {
+    nav ul li {
+       left: 12em;
+    }
+}
+@media only screen and (min-width:740px) {
 }
 /* tourism page */
 .upper-layer {
     height: 500px;
-    background-color: #18233A;
+    background-color: #1f2961;
 }
 
 .content {
@@ -68,7 +130,6 @@ font-weight: 600;
 .content-carrousuel {
     width: 600px;
     position: absolute;
-    float: right;
     animation: rotar 15s infinite linear;
     transform-style: preserve-3d;
 
@@ -78,6 +139,7 @@ font-weight: 600;
     animation-play-state: paused;
     cursor: pointer;
 }
+
 .content-carrousuel figure {
     width: 57%;
     height: 182px;
@@ -156,21 +218,57 @@ font-weight: 600;
 
 }
 
+@media only screen and (max-width: 600px) {
+    .welcome-text {
+        width: 98%
+    }
+
+    .upper-layer {
+        background: url("img/akagera/Giraffes-areas-of-Akagera-National-Park-650x488.jpg");
+        height: 300px;
+        background-color: #18233A;
+    }
+
+    .content {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .welcome-text {
+        width: 98%
+    }
+
+    .upper-layer {
+        background: url("img/akagera/Giraffes-areas-of-Akagera-National-Park-650x488.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        background-color: #18233A;
+    }
+
+    .content {
+        display: none;
+    }
+}
+
 /*general elements*/
 a {
     text-decoration: none;
 }
 
 nav>.logo {
-    height: 40px;
-    margin: 10px;
+    height: 31px;
+    margin: 14px;
 }
+
 .footer-column-1>.logo>img {
     display: block;
     width: 24%;
     height: 30px;
     margin: 0 auto !important;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -181,6 +279,7 @@ html {
     display: flex;
     background-color: #F5F5F5;
     padding: 20px;
+    width: 100%;
 }
 
 .footer-column-1 {
@@ -201,6 +300,7 @@ html {
 .footer-column-4 {
     width: 24%;
 }
+
 .f-map>img {
     width: 95%;
     height: 200px;
@@ -220,7 +320,11 @@ html {
 }
 
 .f-main-links>li>a {
-    color: black;
+    color: #18233A;
+}
+
+.f-main-links>li>a:hover {
+    text-decoration: underline;
 }
 
 .f-main-links>li {
@@ -245,6 +349,7 @@ html {
     text-align: center;
     color: #ffffff;
 }
+
 #f-back-top {
     width: 70px;
     height: 60px;
@@ -255,6 +360,7 @@ html {
     bottom: 0;
     z-index: 12000;
 }
+
 #f-send {
     float: right;
     border: none;
@@ -266,28 +372,24 @@ html {
     outline: none;
     cursor: pointer;
 }
-.social-media-icons{
+
+.social-media-icons {
     display: flex;
     list-style: none;
     width: 100%;
 }
-.social-media-icons>li{
-    margin: 5px ;
+
+.social-media-icons>li {
+    margin: 5px;
     background-color: #ffffff;
     padding: 5px;
     text-align: center;
     color: aliceblue;
+    cursor: pointer;
 }
 
 /* footer responsiveness */
 @media only screen and (max-width:600px) {
-
-    html,
-    body {
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
     .footer {
         display: block;
         overflow-x: hidden;
@@ -304,6 +406,7 @@ html {
     .footer-column-2 {
         padding-left: 0;
     }
+
     .footer-col-header,
     .f-main-links {
         text-align: center;
@@ -313,15 +416,1071 @@ html {
         height: 150px;
         margin: 0 auto;
     }
-    #message{
+
+    .footer-column-1>.logo>img {
+        width: 30%;
+        height: 40px;
+    }
+
+    #message {
         width: 100%;
         padding: 0;
     }
-    .social-media-icons{
+
+    .social-media-icons {
         margin-left: 20%;
-    } 
-    #close-txt,#open-text{
+    }
+
+    #close-txt,
+    #open-text {
         text-align: center;
     }
-    
+
+}
+
+
+/* home stying */
+.first-words {
+    width: 50%;
+    margin: 0em auto;
+    color: white;
+    padding-top: 13em;
+}
+
+.first-words>p {
+    font-size: 1.3em;
+}
+
+.main-slide {
+    background: url("img/kgl-city2.jpg");
+    max-width: 100%;
+    height: 35em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    animation: slide 30s infinite;
+}
+
+@keyframes slide {
+    25% {
+        background-attachment: fixed;
+        background-position: center center;
+        background: url("img/img6.jpg");
+        max-width: 100%;
+        height: 35em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background-attachment: fixed;
+        background-position: center center;
+        background: url("img/img7.jpg");
+        max-width: 100%;
+        height: 35em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background-attachment: fixed;
+        background-position: center center;
+        background: url("img/img5.jpg");
+        max-width: 100%;
+        height: 35em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background-attachment: fixed;
+        background-position: center center;
+        background: url("img/kgl-city2.jpg");
+        max-width: 100%;
+        height: 35em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* .back-txt {
+        width: 90%;
+        margin: 0 auto;
+        background-color: aqua;
+    } */
+
+.bg-txt {
+    text-align: center !important;
+}
+
+#why-visit-div-heading {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    color: #18233A;
+}
+
+.why-visit-div {
+    display: flex;
+    padding: 20px;
+}
+
+.sub-div-heading {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #18233A;
+}
+
+.main-text {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#main-text-2 {
+    text-align: center;
+}
+
+#main-text-3 {
+    text-align: end;
+}
+
+#top-places-heading {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: #18233A;
+}
+
+.exp-text-heading {
+    text-align: center;
+    padding: 1em 0;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #18233A;
+}
+
+.slide>img {
+    width: 55%;
+    float: left;
+    height: 30em;
+}
+
+.slide-3>img {
+
+    width: 100%;
+    height: 32em;
+}
+
+#museum-text {
+    text-align: center;
+    font-size: larger;
+    color: #18233A;
+    font-weight: 400;
+    margin: 30px;
+}
+
+.slide-4>img {
+    width: 55%;
+    float: right;
+    height: 30em;
+}
+
+.exp-text-1,
+.exp-text-4 {
+    width: 45%;
+    float: left;
+    height: 30em;
+    background-color: #fdfdfd;
+    padding: 2em 2em;
+    text-align: center;
+    line-height: 1.7em;
+}
+
+#wordy {
+    text-align: center;
+    padding: 10px 10em;
+}
+
+.end-txt {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+    .first-words {
+        width: 98% !important;
+        padding-top: 7em !important;
+    }
+
+    .first-words>h1 {
+        font-size: large;
+    }
+
+    .first-words>p {
+        font-size: 1em !important;
+    }
+
+    .why-visit-div {
+        display: block;
+        padding: 20px;
+    }
+
+    #why-visit-div-heading {
+        font-size: 1.4em;
+    }
+
+    .main-text {
+        padding: 0;
+        text-align: justify !important;
+    }
+
+    .sub-div-heading {
+        text-decoration: underline;
+    }
+
+    .slide>img,
+    .slide-4>img,
+    .slide-3>img {
+        width: 100%;
+        height: 20em;
+    }
+
+    .exp-text-1,
+    .exp-text-4 {
+        text-align: justify;
+        width: 100%;
+        padding: 0 20px;
+        word-spacing: -1px;
+        height: auto;
+    }
+
+    .exp-text-heading {
+        font-size: 1.3em;
+        font-weight: 500;
+        color: #18233A;
+        padding: 5px 0;
+    }
+
+    .exp-text-heading-2 {
+        padding: 0px 0;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: 500;
+        color: #18233A;
+    }
+
+    #wordy {
+        display: none;
+    }
+
+    #museum-text {
+        margin: 7px;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:1000px) {
+    .why-visit-div {
+        display: block;
+        padding: 20px;
+    }
+
+    #why-visit-div-heading {
+        font-size: 1.4em;
+    }
+
+    .main-text {
+        padding: 0;
+        text-align: justify !important;
+    }
+
+    .sub-div-heading {
+        text-decoration: underline;
+    }
+
+    .slide>img,
+    .slide-3>img {
+        width: 100%;
+        height: 20em;
+    }
+
+    .slide-4>img {
+        width: 100%;
+        height: 25em;
+    }
+
+    .exp-text-1,
+    .exp-text-4 {
+        text-align: justify;
+        width: 100%;
+        padding: 0 20px;
+        word-spacing: -1px;
+        height: auto;
+    }
+
+    .exp-text-heading {
+        font-size: 1.3em;
+        font-weight: 500;
+        color: #18233A;
+        padding: 5px 0;
+    }
+
+    .exp-text-heading-2 {
+        padding: 0px 0;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: 500;
+        color: #18233A;
+    }
+
+    #wordy {
+        display: none;
+    }
+
+    #museum-text {
+        margin: 7px;
+    }
+}
+
+
+#divs-heading {
+    text-align: center;
+    font-weight: 400;
+    font-size: x-large;
+    color: #0d1d40;
+    margin: 16px;
+}
+
+#slide-part-1 {
+    float: left;
+    background: url("img/akagera/img7.jpg");
+    width: 55%;
+    height: 30em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    animation: slide1 30s infinite;
+}
+
+@keyframes slide1 {
+    25% {
+        background-attachment: fixed;
+        background-position: center center;
+        background: url("img/nyungwe/Nyungwe-National-Park-Fees-for-Residdents.jpg");
+        width: 55%;
+        height: 30em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background-attachment: fixed;
+        background-position: center center;
+        background: url("img/volcanoes/Volcas.jpg");
+        width: 55%;
+        height: 30em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background-attachment: fixed;
+        background-position: center center;
+        background: url("img/akagera/Giraffes-areas-of-Akagera-National-Park-650x488.jpg");
+        width: 55%;
+        height: 30em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background-attachment: fixed;
+        background-position: center center;
+        background: url("img/nyungwe/pk.jpg");
+        width: 55%;
+        height: 30em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#explanatory-text-1 {
+    float: right;
+    width: 45%;
+    height: 30em;
+    background-color: whitesmoke;
+}
+
+#slide-part-2 {
+    float: right;
+    background: url("img/kgl-city2.jpg");
+    width: 55%;
+    height: 30em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    animation: slide2 30s infinite;
+}
+
+@keyframes slide2 {
+    25% {
+        background-attachment: fixed;
+        background-position: center center;
+        background: url("img/city/kgl-city.png");
+        width: 55%;
+        height: 30em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background-attachment: fixed;
+        background-position: center center;
+        background: url("img/city/Urban-1.jpg");
+        width: 55%;
+        height: 30em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background-attachment: fixed;
+        background-position: center center;
+        background: url("img/city/73439367.jpg");
+        width: 55%;
+        height: 30em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background-attachment: fixed;
+        background-position: center center;
+        background: url("img/kgl-city2.jpg");
+        width: 55%;
+        height: 30em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#explanatory-text-2 {
+    text-align: center;
+    padding: 6em 1em;
+    float: left;
+    width: 45%;
+    height: 30em;
+    background-color: whitesmoke;
+}
+
+#slide-part-3 {
+    float: left;
+    background: url("img/city/524-php35bq75_onomokigali-307.jpg");
+    width: 55%;
+    height: 30em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    animation: slide3 30s infinite;
+}
+
+@keyframes slide3 {
+    25% {
+        background-attachment: fixed;
+        background-position: center center;
+        background: url("img/kivu/Rwanda-Lake-Kivu-1-1920x1439.jpg");
+        width: 55%;
+        height: 30em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background-attachment: fixed;
+        background-position: center center;
+        background: url("img/kivu/T0302LAKEKIVU_C_HR.jpg");
+        width: 55%;
+        height: 30em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background-attachment: fixed;
+        background-position: center center;
+        background: url("img/kivu/30553-image-dnbeautykivu1.jpg");
+        width: 55%;
+        height: 30em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background-attachment: fixed;
+        background-position: center center;
+        background: url("img/kivu/123052456.jpg");
+        width: 55%;
+        height: 30em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#explanatory-text-1 {
+    padding: 6em 1em;
+    float: right;
+    width: 45%;
+    height: 30em;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+#explanatory-text-3 {
+    padding: 6em 1em;
+    float: right;
+    width: 45%;
+    height: 30em;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.tst-words p:nth-child(2) {
+    font-style: italic;
+}
+
+.testimonial-div {
+    width: 32%;
+    float: left;
+    margin: 3em 0.5em;
+    box-shadow: -1px 2px 5px 1px grey;
+    text-align: center;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 660px) {
+
+    #slide-part-3,
+    #slide-part-2,
+    #slide-part-1 {
+        width: 100%;
+        height: 20em;
+    }
+
+    @keyframes slide1 {
+        25% {
+            background-attachment: fixed;
+            background-position: center center;
+            background: url("img/nyungwe/Nyungwe-National-Park-Fees-for-Residdents.jpg");
+            width: 100%;
+            height: 20em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        50% {
+            background-attachment: fixed;
+            background-position: center center;
+            background: url("img/volcanoes/Volcas.jpg");
+            width: 100%;
+            height: 20em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        75% {
+            background-attachment: fixed;
+            background-position: center center;
+            background: url("img/akagera/Giraffes-areas-of-Akagera-National-Park-650x488.jpg");
+            width: 100%;
+            height: 20em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        100% {
+            background-attachment: fixed;
+            background-position: center center;
+            background: url("img/nyungwe/pk.jpg");
+            width: 100%;
+            height: 20em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    @keyframes slide2 {
+        25% {
+            background-attachment: fixed;
+            background-position: center center;
+            background: url("img/city/kgl-city.png");
+            width: 100%;
+            height: 20em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        50% {
+            background-attachment: fixed;
+            background-position: center center;
+            background: url("img/city/Urban-1.jpg");
+            width: 100%;
+            height: 20em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        75% {
+            background-attachment: fixed;
+            background-position: center center;
+            background: url("img/city/73439367.jpg");
+            width: 100%;
+            height: 20em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        100% {
+            background-attachment: fixed;
+            background-position: center center;
+            background: url("img/kgl-city2.jpg");
+            width: 100%;
+            height: 20em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+
+    @keyframes slide3 {
+        25% {
+            background-attachment: fixed;
+            background-position: center center;
+            background: url("img/kivu/Rwanda-Lake-Kivu-1-1920x1439.jpg");
+            width: 100%;
+            height: 20em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        50% {
+            background-attachment: fixed;
+            background-position: center center;
+            background: url("img/kivu/T0302LAKEKIVU_C_HR.jpg");
+            width: 100%;
+            height: 20em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        75% {
+            background-attachment: fixed;
+            background-position: center center;
+            background: url("img/kivu/30553-image-dnbeautykivu1.jpg");
+            width: 100%;
+            height: 20em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        100% {
+            background-attachment: fixed;
+            background-position: center center;
+            background: url("img/kivu/123052456.jpg");
+            width: 100%;
+            height: 20em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    #explanatory-text-3,
+    #explanatory-text-2,
+    #explanatory-text-1 {
+        width: 100%;
+        padding: 2em 1em;
+        float: none;
+        height: auto;
+    }
+
+    .testimonial-div {
+        width: 97%;
+        float: none;
+        margin: 1.5em auto;
+    }
+
+    #divs-heading {
+        font-size: larger;
+        margin: 10px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 660px) and (max-width:768px) {
+
+    #explanatory-text-3,
+    #explanatory-text-2,
+    #explanatory-text-1 {
+        padding: 4em 1em;
+    }
+
+    #divs-heading {
+        font-size: larger;
+    }
+}
+
+/* gallery */
+.upper-part {
+    background: url("img/city/kgl-city.png");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gallery-title {
+    padding: 5em 0 20px 0 !important;
+}
+
+.gallery-heading {
+    text-align: center;
+    color: #ffffff;
+}
+
+.upper-section,
+.lower-section {
+    display: flex;
+}
+
+.upper-section {
+    margin-top: -13em;
+}
+
+.lower-section {
+    margin-bottom: 4em;
+}
+
+.images-sub-container-1,
+.images-sub-container-3 {
+    width: 46%;
+    height: 25em;
+    border-radius: 5px;
+    border: 0.1px solid #c4ccdd;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.images-sub-container-1>img,
+.images-sub-container-3>img {
+    width: 49.4%;
+    height: 12em;
+}
+
+.images-sub-container-2 {
+    width: 96%;
+    margin: 1em auto;
+    height: 25em;
+    border-radius: 5px;
+    border: 0.1px solid #c4ccdd;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images-sub-container-2>img {
+    width: 25%;
+    height: 12.4em;
+}
+
+@media only screen and (max-width:600px) {
+    .upper-part {
+        height: 300px;
+    }
+
+    .upper-section,
+    .lower-section {
+        display: unset;
+    }
+
+    .images-sub-container-1,
+    .images-sub-container-3 {
+        width: 100%;
+    }
+
+    .images-sub-container-1>img,
+    .images-sub-container-3>img {
+        width: 49%;
+        height: 12em;
+    }
+
+    .images-sub-container-2>img:nth-child(odd) {
+        display: none;
+    }
+
+    .images-sub-container-2>img:nth-child(even) {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+
+    .images-sub-container-1>img,
+    .images-sub-container-3>img {
+        width: 49%;
+        height: 12em;
+    }
+}
+
+/* contact */
+
+.upper {
+    padding: 20px;
+}
+
+.we-connect {
+    width: 39%;
+    margin-left: 0.5em;
+    padding: 3em;
+    float: left;
+}
+
+#we-connect-heading {
+    color: #18233A;
+    font-size: 30px;
+}
+
+.map-supporters {
+    background: url(img/dot-map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30em;
+    width: 60%;
+    float: right;
+}
+
+#contact-header {
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+#or {
+    font-size: 25px;
+}
+
+.middle {
+    background: url("img/lap2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50em;
+    margin-top: 18em;
+}
+
+form {
+    position: absolute;
+    width: 40%;
+    margin: 10em auto 0 40%;
+    background-color: #18233A;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.form-group {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.form-control {
+    width: 100%;
+    padding: 5px;
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+#form-msg {
+    height: 13em !important;
+}
+
+.supporters-imgs>img {
+    width: 25%;
+    height: 100px;
+    margin: 5px;
+    animation: display 3.2s 1 linear;
+}
+
+@keyframes display {
+    25% {
+        width: 26%;
+        height: 120px;
+        margin: 12px;
+    }
+
+    50% {
+        width: 26%;
+        height: 130px;
+        margin: 8px;
+    }
+
+    50% {
+        width: 25.5%;
+        height: 120px;
+        margin: 8px;
+    }
+
+    75% {
+        width: 25%;
+        height: 110px;
+        margin: 8px;
+    }
+
+    100% {
+        width: 25%;
+        height: 100px;
+        margin: 8px;
+    }
+}
+
+.supporters-imgs {
+    width: 90%;
+    margin: auto;
+    padding-top: 4em;
+    padding-left: 9em;
+}
+
+.supporters-imgs>h3 {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 500;
+}
+
+#form-submit {
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 80%;
+}
+
+#form-title {
+    color: #ffffff;
+    font-size: large;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .we-connect {
+        width: 100%;
+        margin: 0;
+        padding: 0
+    }
+
+    #we-connect-heading {
+        color: #18233A;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .map-supporters {
+        display: none;
+    }
+
+    #connection-txt {
+        text-align: justify;
+        word-spacing: -1px;
+    }
+
+    #contact-header {
+        margin-top: 10px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    form {
+        width: 99%;
+        margin-top: 7em;
+        padding: 3px;
+        margin-left: 0;
+    }
+
+    .form-group {
+        width: 90%;
+    }
+
+    .middle {
+        background: none;
+        height: 33em;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:1300px) {
+    form {
+        width: 90%;
+        margin: 10px auto 10px auto;
+        padding: 3px;
+        margin-left: 0;
+    }
+
+    .form-group {
+        width: 80%;
+    }
+
+    .middle {
+        background: none;
+        height: 27em;
+        width: 90%;
+        margin: -1em auto 0 auto;
+    }
+
+    .we-connect {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        float: none;
+    }
+
+    #we-connect-heading {
+        color: #18233A;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .map-supporters {
+        width: 100%;
+        float: none;
+    }
+
+    #connection-txt {
+        text-align: justify;
+        word-spacing: -1px;
+    }
+
+    #contact-header {
+        margin-top: 10px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
 }

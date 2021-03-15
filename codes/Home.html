@@ -6,176 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
     <title>Gallery</title>
 </head>
-<style>
-    .main-slide {
-        background: url("img/kgl-city2.jpg");
-        width: 100%;
-        height: 35em;
-        background-repeat: no-repeat;
-        background-size: cover;
-        animation: slide 30s infinite;
-        animation-delay: 4s;
-    }
-
-    @keyframes slide {
-        25% {
-            background: url("img/img6.jpg");
-            width: 100%;
-            height: 35em;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        50% {
-            background: url("img/img7.jpg");
-            width: 100%;
-            height: 35em;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        75% {
-            background: url("img/img5.jpg");
-            width: 100%;
-            height: 35em;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        100% {
-            background: url("img/kgl-city2.jpg");
-            width: 100%;
-            height: 35em;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    }
-
-    #why-visit-div-heading {
-        text-align: center;
-        font-weight: 700;
-        font-size: 30px;
-    }
-
-    .why-visit-div {
-        display: flex;
-        padding: 20px;
-    }
-
-    .sub-div-heading {
-        font-size: 18px;
-        font-weight: 600;
-        text-align: center;
-    }
-
-    .main-text {
-        padding-left: 20px;
-        padding-top: 10px;
-    }
-
-    #main-text-2 {
-        text-align: center;
-    }
-
-    #main-text-3 {
-        text-align: end;
-    }
-
-    #top-places-heading {
-        text-align: center;
-        font-size: 25px;
-        font-weight: 700;
-    }
-
-    .exp-text-heading {
-        text-align: center;
-        padding-top: 15px;
-    }
-
-    .slide>img {
-        width: 55%;
-        float: left;
-        height: 30em;
-    }
-
-    .slide-3>img {
-        width: 100%;
-        height: 32em;
-    }
-
-    #museum-text {
-        text-align: center;
-        font-size: larger;
-        margin: 30px;
-    }
-
-    .slide-4>img {
-        width: 55%;
-        float: right;
-        height: 30em;
-    }
-
-    .exp-text-1,
-    .exp-text-4 {
-        width: 45%;
-        float: left;
-        height: 30em;
-        background-color: #fdfdfd;
-    }
-
-    #wordy {
-        text-align: center;
-        padding: 10px 10em;
-    }
-
-    .end-txt {
-        text-align: center;
-        font-size: 20px;
-        margin: 10px;
-        font-style: italic;
-    }
-</style>
 
 <body>
     <div class="main-container">
         <nav>
             <img src="img/logo.png" class="logo" alt="logo">
+            <input type="checkbox" id="check">
+            <label for="check" class="menu-icon"><i class="ri-menu-2-line"></i></label>
             <ul class="nav-links">
-                <li class="nav-item-1"><a href="Home.html" id="active">Home</a></li>
-                <li class="nav-item-2"><a href="Tourism.html">Tourism</a></li>
-                <li class="nav-item-3"><a href="Gallery.html">Gallery</a></li>
-                <li class="nav-item-4"><a href="contact.html">Get in touch</a></li>
+
+                <li class="nav-item"><a href="Home.html" >Home</a></li>
+                <li class="nav-item"><a href="Tourism.html">Tourism</a></li>
+                <li class="nav-item"><a href="Gallery.html">Gallery</a></li>
+                <li class="nav-item"><a href="contact.html">Get in touch</a></li>
+
             </ul>
         </nav>
         <div class="main-slide">
+            <div class="first-words">
+                <h1>VISIT RWANDA THE LAND OF THOUSAND HILLS</h1>
+                <p>If there is a great place to be visited , a nice ground to learn and invest , beautiful nature to
+                    relax and enjoy
+                    That is the beautiful Rwanda</p>
+            </div>
         </div>
-        <h1 id="why-visit-div-heading">WHY SHOULD YOU VISIT RWANDA</h1>
+        <h1 id="why-visit-div-heading">WHY YOU VISIT RWANDA</h1>
         <div class="why-visit-div">
             <div class="why-visit-subdiv">
                 <div class="sub-div-heading">RELAXATION</div>
                 <div class="main-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse est alias sint itaque, numquam
-                    possimus saepe. Et fugit incidunt molestiae voluptates iure, aspernatur obcaecati amet, nostrum modi
-                    quas unde nobis.
+                    Rwanda is one of the the first counties world wide with a great places to take leisure and relax, it
+                    has many hotels , natural feautures that really blows mind
                 </div>
             </div>
             <div class="why-visit-subdiv">
                 <div class="sub-div-heading">RWANDA'S CULTURE AND HERITAGE</div>
                 <div class="main-text" id="main-text-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse est alias sint itaque, numquam
-                    possimus saepe. Et fugit incidunt molestiae voluptates iure, aspernatur obcaecati amet, nostrum modi
-                    quas unde nobis.
+                    Warm and friendly, Rwandans are also respectful, thoughtful and committed to the idea of progress,
+                    starting at the grass roots and running all the way to the top.
+                    From the ancient kingdom to the modern day, creativity is something to be celebrated, whether
+                    through traditional dance, unique architecture or works of art.
                 </div>
             </div>
             <div class="why-visit-subdiv">
                 <div class="sub-div-heading">INVESTMENT AND BUSSINESS</div>
                 <div class="main-text" id="main-text-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse est alias sint itaque, numquam
-                    possimus saepe. Et fugit incidunt molestiae voluptates iure, aspernatur obcaecati amet, nostrum modi
-                    quas unde nobis.
+                    Rwanda is ranked as the second easiest place to do business in Africa by the World Bank and has been
+                    awarded for its leadership in tourism and economic competitiveness by the World Travel and Tourism
+                    Council (WTTC) and the World Economic Forum respectively.
                 </div>
             </div>
         </div>
@@ -186,23 +69,28 @@
                     <img src="img/img7.jpg" alt="img">
                 </div>
                 <div class="exp-text-1">
-                    <h5 class="exp-text-heading">Rwanda National parks</h5>
+                    <h5 class="exp-text-heading">NATURAL LIFE HABITANT</h5>
+                    Be the first to see what can't be seen anywhere around the world. Along with wildlife conservation
+                    and community engagement, tourism holds the key to continuing to unlock needed economic benefits
+                    leading to a brighter future for those that live around Akagera and in the region. The park also
+                    intends to maintain zero loss of elephants and rhinos to poaching through effective law enforcement
+                    and community engagement efforts.
+                    Many lakes ,rivers mountains ,aquatic animals like hipos, corcodile , top 3 biggest of the jungle
+                    and many more beautiful feautures that are rarely seen are found in Rwanda
                 </div>
             </div>
             <div class="top-places-subdiv">
                 <div class="slide">
-
-
                 </div>
                 <div class="exp-text-2">
                     <h5 class="exp-text-heading">VISIT A RAPID DEVELOPING NATION</h5>
-                    <h5 class="exp-text-heading">Rwanda is now a great place to invest</h5>
-                    <p id="wordy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia dolor est
-                        dolore, asperiores enim obcaecati accusantium rerum nemo nulla veniam deserunt vitae modi
-                        voluptate optio impedit numquam, quo cum!
-                        Quam eius veniam nesciunt porro praesentium harum laborum quisquam alias? Nobis, veniam
-                        perferendis tempora similique, nemo qui architecto consectetur provident enim quaerat maxime in
-                        sunt fugit aliquam nam iste porro.
+                    <p id="wordy">
+                        Rwanda’s economy has tremendously recovered over the last two decades. The country registered an
+                        average GDP growth of around 8 percent per year, with a double-digit growth recorded in the last
+                        two quarters of 2019. Since 2000s, collected domestic taxes increased 20 times while the
+                        national budget increased 14 times. Rwanda is the 2nd best place to do business in Africa thanks
+                        to extensive 10-year doing business reforms. This page provides highlights of Rwanda's economy
+                        achievements over the last two decades.
                     </p>
                 </div>
             </div>
@@ -217,7 +105,12 @@
                     <img src="img/rukari.jpg" alt="img">
                 </div>
                 <div class="exp-text-4">
-                    <h5 class="exp-text-heading">Rwanda National parks</h5>
+                    <h5 class="exp-text-heading">CULTURAL VALUES RESERVED</h5>
+                    Rwandan culture has many traditions including traditional Intore dancing, basketry and Umuganda.
+                    A reconstruction of the traditional royal residence, the King's Palace is a beautifully-crafted
+                    thatched dwelling shaped like a beehive. At the back live a few long-horned Inyambo cattle,
+                    descended from the king's herd, whose keepers carefully tend and sing to them, keeping alive a
+                    unique tradition.
                 </div>
             </div>
         </div>
@@ -225,21 +118,16 @@
         <div class="end-txt">
             "visit Rwanda ,relax ,learn and invest "
         </div>
-
-
-
-
-
-
-       
         <div class="footer">
             <div class="footer-column-1">
                 <div class="logo">
                     <img src="img/logo.png" alt="logo">
                 </div>
                 <div class="footer-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem officiis corrupti
-                        dignissimos, fugiat e</p>
+                    <p>If there is a great place to be visited , a nice ground to learn and invest , beautiful nature to
+                        relax and enjoy
+                        That is the beautiful Rwanda
+                    </p>
                 </div>
                 <div class="f-map">
                     <img src="img/map-of-rwanda.jpg" alt="rwanda-map">
@@ -248,10 +136,10 @@
             <div class="footer-column-2">
                 <h6 class="footer-col-header">Main links</h6>
                 <ul class="f-main-links">
-                    <li class="nav-item-1"><a href="Home.html">Home</a></li>
-                    <li class="nav-item-2"><a href="Tourism.html" id="active">Tourism</a></li>
-                    <li class="nav-item-3"><a href="Gallery.html">Gallery</a></li>
-                    <li class="nav-item-4"><a href="contact.html">Get in touch</a></li>
+                    <li class="nav-item"><a href="Home.html">Home</a></li>
+                    <li class="nav-item"><a href="Tourism.html" >Tourism</a></li>
+                    <li class="nav-item"><a href="Gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a href="contact.html">Get in touch</a></li>
                 </ul>
             </div>
             <div class="footer-column-3">
@@ -287,4 +175,5 @@
         </div>
     </div>
 </body>
+
 </html>

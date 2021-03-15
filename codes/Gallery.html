@@ -1,85 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Gallery</title>
 </head>
-<style>
-    .upper-part{
-        background: url("img/city/73439367.jpg");
-        height: 500px;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    #gallery-title {
-        padding: 5em 0 20px 0 !important;
-    }
-
-    .gallery-heading {
-        text-align: center;
-        color: #ffffff;
-    }
-
-    .upper-section,
-    .lower-section {
-        display: flex;
-    }
-
-    .upper-section {
-        margin-top: -13em;
-    }
-
-    .lower-section {
-        margin-bottom: 4em;
-    }
-
-    .images-sub-container-1,
-    .images-sub-container-3 {
-        width: 46%;
-        height: 25em;
-        border-radius: 5px;
-        border: 0.1px solid #c4ccdd;
-        margin: 0 auto;
-        background-color: #ffffff;
-        padding: 5px;
-    }
-
-    .images-sub-container-1>img,
-    .images-sub-container-3>img {
-        width: 49.4%;
-        height: 12em;
-    }
-
-    .images-sub-container-2 {
-        width: 96%;
-        margin: 1em auto;
-        height: 25em;
-        border-radius: 5px;
-        border: 0.1px solid  #c4ccdd;
-        background-color: #ffffff;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .images-sub-container-2>img {
-        width: 20%;
-        height: 12.4em;
-    }
-</style>
 
 <body>
     <div class="main-container">
         <nav>
             <img src="img/logo.png" class="logo" alt="logo">
+            <input type="checkbox" id="check">
+            <label for="check" class="menu-icon"><i class="ri-menu-2-line"></i></label>
             <ul class="nav-links">
-                <li class="nav-item-1"><a href="Home.html">Home</a></li>
-                <li class="nav-item-2"><a href="Tourism.html">Tourism</a></li>
-                <li class="nav-item-3"><a href="Gallery.html" id="active">Gallery</a></li>
-                <li class="nav-item-4"><a href="contact.html">Get in touch</a></li>
+               
+                    <li class="nav-item"><a href="Home.html">Home</a></li>
+                    <li class="nav-item"><a href="Tourism.html">Tourism</a></li>
+                    <li class="nav-item"><a href="Gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a href="contact.html">Get in touch</a></li>
+                
             </ul>
         </nav>
         <div class="upper-part">
@@ -96,13 +41,17 @@
                     <img src="img/city/kgl-city2.jpg" alt="">
                     <img src="img/city/kgl-city3.jpg" alt="">
                 </div>
+                <p class="upper-image title"></p>
                 <div class="images-sub-container-1">
                     <img src="img/volcanoes/Volcanoes_National_Park_Banner_Image.gif" alt="">
                     <img src="img/volcanoes/Volcas.jpg" alt="">
                     <img src="img/volcanoes/Visit-Rwanda-Kings-Palace-Nyanza-Front-1920x1280.jpg" alt="">
                     <img src="img/volcanoes/Visit-Rwanda_-Nyanza-Traditional-Intore-Dancers-1920x1280.jpg" alt="">
                 </div>
+                <!-- <p>Kigali city, the capital city of Rwanda. The city of vision</p> -->
             </div>
+            <!-- <h5 class="image-title">See the beauty and uniquiness of akagera national park! It's really a great place to
+                be</h5> -->
             <div class="middle-section">
                 <div class="images-sub-container-2">
                     <img src="img/akagera/5-1830jpg-22223f-33598.jpg" alt="">
@@ -113,19 +62,18 @@
                     <img src="img/akagera/img7.jpg" alt="">
                     <img src="img/akagera/intare-7jpg-f64a-8330c.jpg" alt="">
                     <img src="img/akagera/img6.jpg" alt="">
-                    <img src="img/akagera/img4.jpg" alt="">
-                    <img src="img/akagera/images (2).jpg" alt="">
                 </div>
             </div>
             <div class="lower-section">
+                <!-- <h5 class="image-title">Nyungwe national park</h5> -->
                 <div class="images-sub-container-3">
                     <img src="img/nyungwe/monkey-tracking-safari-tours-nyungwe-forest-national-park-rwanda__1920x864.jpg"
                         alt="">
-                    <img src="img/nyungwe/pk.jpg"
-                        alt="">
+                    <img src="img/nyungwe/pk.jpg" alt="">
                     <img src="img/nyungwe/Nyungwe-NP-Canopy-Walk.jpg" alt="">
                     <img src="img/nyungwe/ry6b6329jpg-2f47-0cf30.jpg" alt="">
                 </div>
+                <!-- <h5 class="image-title">Lake kivu and IDWJI island</h5> -->
                 <div class="images-sub-container-3">
                     <img src="img/kivu/30553-image-dnbeautykivu1.jpg" alt="">
                     <img src="img/kivu/Rwanda-Lake-Kivu-1-1920x1439.jpg" alt="">
@@ -144,8 +92,10 @@
                     <img src="img/logo.png" alt="logo">
                 </div>
                 <div class="footer-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem officiis corrupti
-                        dignissimos, fugiat e</p>
+                    <p>If there is a great place to be visited , a nice ground to learn and invest , beautiful nature to
+                        relax and enjoy
+                        That is the beautiful Rwanda
+                    </p>
                 </div>
                 <div class="f-map">
                     <img src="img/map-of-rwanda.jpg" alt="">
@@ -155,7 +105,7 @@
                 <h6 class="footer-col-header">Main links</h6>
                 <ul class="f-main-links">
                     <li class="nav-item-1"><a href="Home.html">Home</a></li>
-                    <li class="nav-item-2"><a href="Tourism.html" id="active">Tourism</a></li>
+                    <li class="nav-item-2"><a href="Tourism.html">Tourism</a></li>
                     <li class="nav-item-3"><a href="Gallery.html">Gallery</a></li>
                     <li class="nav-item-4"><a href="contact.html">Get in touch</a></li>
                 </ul>
